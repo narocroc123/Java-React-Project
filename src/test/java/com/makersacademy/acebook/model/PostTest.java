@@ -11,7 +11,13 @@ public class PostTest {
 
 	@Test
 	public void postHasContent() {
-		assertThat(post.getContent(), containsString("hello"));
+		String testPost = "hello";
+		assertThat(post.getContent(), containsString(testPost));
 	}
 
+	@Test
+	public void postHasTimestamp() {
+		String testDate = "2020-04-07";
+		assertThat(post.getContent(), containsString(testDate));
+	}
 }
