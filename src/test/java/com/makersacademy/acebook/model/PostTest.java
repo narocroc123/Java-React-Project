@@ -1,13 +1,10 @@
 package com.makersacademy.acebook.model;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
+
+import static org.junit.Assert.assertEquals;
 
 public class PostTest {
 
