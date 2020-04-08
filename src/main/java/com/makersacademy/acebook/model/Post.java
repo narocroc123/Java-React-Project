@@ -7,6 +7,9 @@ import javax.persistence.Table;
 import javax.persistence.GenerationType;
 
 import lombok.Data;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.sql.Timestamp;
 
 @Data
 @Entity
@@ -17,13 +20,16 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String content;
-    private String timestamp;
+    @UpdateTimestamp
+    private Timestamp timestamp;
 
     private Post() {}
 
-    public Post(String content, String timestamp) {
+    public Post(String content) {
         this.content = content;
-        this.timestamp = timestamp;
     }
 
+    public String getContent() {
+        return content;
+    }
 }
