@@ -2,7 +2,7 @@
 
 This is a java/springboot and react project to be developed on.
 
-It uses:
+### It uses
   - `maven` to build the project
   - `webpack` to bundle the javascript
   - `thymeleaf` to serve `index.html`
