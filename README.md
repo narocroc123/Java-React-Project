@@ -17,8 +17,3 @@ It uses:
 - Install Maven `brew install maven`
 - Build the app and start the server, using the Maven command `mvn spring-boot:run`
 - Visit `localhost:8080`
-
-- Temporarily, if you want to add some posts you can use `curl` to post data to the API and then refresh the page. 
-```
-curl -X POST 'localhost:8080/api/posts' -d '{"content": "Hi, Folks!"}' -H 'Content-Type: application/json'
-```
