@@ -28,7 +28,7 @@ class CreatePost extends React.Component {
         return(
             <div>
                 <div className='create-post-header'>
-                    <h4>Create A Post</h4>
+                    <h3>Create A Post</h3>
                 </div>
                 <div className='create-post-body'>
                     <form onSubmit={this.handleSubmit}>
