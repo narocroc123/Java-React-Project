@@ -28,12 +28,12 @@ class CreatePost extends React.Component {
         return(
             <div>
                 <div className='create-post-header'>
-                    <h1>Create Post</h1>
+                    <h4>Create A Post</h4>
                 </div>
                 <div className='create-post-body'>
                     <form onSubmit={this.handleSubmit}>
-                        <input className='create-post-content' ref='content' id='content' name='content' type='text'/>
-                        <input className='button' type='submit' name='Create Post'/>
+                        <input className='create-post-content' ref='content' id='content' name='content' type='text' placeholder='Create Post' />
+                        <input className='button' type='submit' name='Create Post' />
                     </form>
                 </div>
             </div>

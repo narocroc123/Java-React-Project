@@ -1,5 +1,6 @@
 import React from 'react';
-import Post from './post'
+import Post from './post';
+import CreatePost from './createPost';
 
 class Posts extends React.Component {
   constructor(props) {
@@ -13,9 +14,9 @@ class Posts extends React.Component {
             <h1 className='posts-title'>
               Posts
             </h1>
-//            <div className='posts-create-post'>
-//                <CreatePost />
-//            </div>
+            <div className='posts-create-post'>
+                <CreatePost />
+            </div>
             <div className='posts-items'>
                 {this.getPosts()}
             </div>
@@ -24,7 +25,7 @@ class Posts extends React.Component {
 	}
 
   getPosts() {
-    return this.props.posts.map(post =>
+    return this.props.posts.reverse().map(post =>
 			<Post key={post._links.self.href} post={post}/>
 		);
   }
